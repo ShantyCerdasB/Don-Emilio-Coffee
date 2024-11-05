@@ -20,13 +20,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        cache: 'yarn'
     - name: Install dependencies
       run: yarn install
-      working-directory: ./cafe-don-emilio
-    - name: Build the project
-      run: yarn build --if-present
-      working-directory: ./cafe-don-emilio
-    - name: Run tests
+      working-directory: ./cafe-don-emilio  # Cambiado a la ubicación correcta
+    - name: Build
+      run: yarn build
+      working-directory: ./cafe-don-emilio  # Cambiado a la ubicación correcta
+    - name: Run Tests
       run: yarn test
-      working-directory: ./cafe-don-emilio
+      working-directory: ./cafe-don-emilio  # Cambiado a la ubicación correcta
