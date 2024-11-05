@@ -1,1 +1,0 @@
-export * from "./food-cart.component.tsx";

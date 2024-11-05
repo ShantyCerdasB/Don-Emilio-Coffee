@@ -1,1 +1,0 @@
-export * from "./coffee-product.component.tsx";

@@ -1,1 +1,0 @@
-export * from "./price-quantity.component.tsx";
